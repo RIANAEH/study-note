@@ -2,7 +2,7 @@
 
 > 엘리의 학습 저장소
 
-## Other Study Notes
+### Other Study Notes
 
 - [2022-Monday-CS-Study](https://github.com/woowacourse-study/2022-Monday-CS-Study)
 - [2022 데일리 이펙티브 자바 스터디](https://github.com/woowacourse-study/2022-daily-effective-java)
@@ -27,11 +27,15 @@
 
 ## Database
 
-## 대규모 시스템 설계
+## System Design
 
 - Cache
 - Replication
 - MessageQueue
+
+## Network
+
+- [HTTPS](./network/https.md)
 
 ## OS
 
