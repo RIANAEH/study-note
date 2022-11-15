@@ -11,6 +11,7 @@
 ## Spring
 
 - [Library vs. Framework (with IoC)](./spring/library-framework.md)
+- [Singleton Registry](./spring/singleton-registry.md)
 - [Text Context Framework](./spring/test-context-framwork.md)
 
 ## JPA
