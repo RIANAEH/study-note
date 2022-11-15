@@ -31,3 +31,7 @@
 
 ## 참고 자료
 - 토비의 스프링 3.1 Vol.1
+
+## 📚 관련 학습
+
+- [Spring Web MVC에서 요청 마다 Thread가 생성되어 Controller를 통해 요청을 수행할텐데, 어떻게 1개의 Controller만 생성될 수 있을까요?](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/Java/65.md)
