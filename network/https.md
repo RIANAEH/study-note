@@ -27,7 +27,7 @@ TLS 프로토콜과 SSL 프로토콜은 모두 웹 상에서 정보를 암호화
     - Send client certificate: 만약 서버가 클라이언트의 인증서를 요구한다면 서버의 인증서와 같은 방식으로 암호화를 진행하여 함께 전송한다.
 5. Verify Client Certificate: 서버가 받은 the premaster secret을 서버 개인키로 복호화한다. 
 6. Client Finished: 클라이언트가 `client random`, `server random`, `the premaster secret`을 이용해 대칭키로 활용할 `session key`를 생성한다.
-7. Server Finished: 서버가 `client random`, `server random`, `the premaster secret를 이용해 대칭키로 활용할 `session key`를 생성합니다. 서버가 세션 키로 암호화된 "finished" 메시지를 전송한다.
+7. Server Finished: 서버가 `client random`, `server random`, `the premaster secret`를 이용해 대칭키로 활용할 `session key`를 생성합니다. 서버가 세션 키로 암호화된 "finished" 메시지를 전송한다.
 8. Exchange Messages: 핸드셰이크가 완료되고, 세션 키를 이용해 메세지를 주고 받는다.
 
 ## 참고 자료
