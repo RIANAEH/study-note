@@ -15,6 +15,7 @@
 
 - [JIT Complier](./java/jit-compiler.md)
 - [Garbage Collector](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/Java/2.md)
+- [Primitive Type & Reference Type](./java/primitive-reference-type.md)
 - [ArrayList](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/Java/40.md)
 
 ## Spring
@@ -24,8 +25,11 @@
 - [Singleton Registry](./spring/singleton-registry.md)
 - [Dependency Injection](./spring/di.md)
 - [Test Context Framework](./spring/test-context-framwork.md)
+- Spring AOP & Proxy
 
 ## JPA
+
+- JPA
 
 ## Database
 
