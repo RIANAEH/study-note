@@ -27,6 +27,7 @@
 - [Dependency Injection](./spring/di.md)
 - [Test Context Framework](./spring/test-context-framwork.md)
 - Spring AOP & Proxy
+- [@RequestScope](./spring/request-scope.md)
 
 ## JPA
 
