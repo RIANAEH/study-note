@@ -23,5 +23,7 @@ ObjectProvider를 이용하는 방법도 있습니다. ObjectProvider는 getObje
 
 ## 🤔 그렇다면 실제 빈은 언제 생성되는 걸까?
 
+## ThreadLocal과는 뭐가 다른 걸까?
+
 ## 참고 자료
 - https://chung-develop.tistory.com/64
