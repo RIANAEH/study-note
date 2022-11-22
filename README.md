@@ -48,4 +48,4 @@
 
 ## ETC.
 
-- [일을 잘하는 방법](./career/career.md)
+- [일을 잘하는 방법](./etc/career.md)
