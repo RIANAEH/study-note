@@ -4,7 +4,7 @@
 
 ### Other Study Notes
 
-- [2022-Monday-CS-Study](https://github.com/woowacourse-study/2022-Monday-CS-Study)
+- [2022 Monday CS Study](https://github.com/woowacourse-study/2022-Monday-CS-Study)
 - [2022 데일리 이펙티브 자바 스터디](https://github.com/woowacourse-study/2022-daily-effective-java)
 
 ## Programming
@@ -46,3 +46,6 @@
 
 - [Context Switching](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/OperatingSystem/16.md)
 
+## ETC.
+
+- [일을 잘하는 방법](./career/career.md)
