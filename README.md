@@ -51,6 +51,7 @@
 ## Network
 
 - [네트워크 전반적인 과정](./network/networking-flow.md)
+- [HTTP](./network/http.md)
 - [HTTPS](./network/https.md)
 
 ## OS
