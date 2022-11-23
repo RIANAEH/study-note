@@ -26,6 +26,7 @@
 - [Singleton Registry](./spring/singleton-registry.md)
 - [Dependency Injection](./spring/di.md)
 - [Test Context Framework](./spring/test-context-framwork.md)
+- [Transaction](./spring/transaction.md)
 - Spring AOP & Proxy
 - [@RequestScope](./spring/request-scope.md)
 
