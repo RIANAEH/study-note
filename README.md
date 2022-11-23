@@ -29,6 +29,7 @@
 - [Transaction](./spring/transaction.md)
 - Spring AOP & Proxy
 - [@RequestScope](./spring/request-scope.md)
+- [Ameria](./spring/armeria.md)
 
 ## JPA
 
