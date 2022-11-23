@@ -40,6 +40,7 @@
 ## System
 
 - [Docker & K8s](./system/docker-k8s.md)
+- [DB Synchronization](./system/db-synchronization.md)
 - Cache
 - Replication
 - MessageQueue
