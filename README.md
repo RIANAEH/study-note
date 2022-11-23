@@ -1,6 +1,6 @@
 # study-note
 
-> 엘리의 학습 저장소
+> 잘 못 된 정보가 있다면 이슈 발행 부탁드립니다 ✨
 
 ### Other Study Notes
 
@@ -9,6 +9,8 @@
 
 ## Programming
 
+- [일을 잘하는 방법](./programming/career.md)
+- [지속 성장 가능한 소프트웨어를 만들자!](./programming/code.md)
 - [Singleton Pattern](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/Design/1.md)
 
 ## Java
@@ -58,8 +60,3 @@
 ## OS
 
 - [Context Switching](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/OperatingSystem/16.md)
-
-## ETC.
-
-- [일을 잘하는 방법](./etc/career.md)
-- [지속 성장 가능한 소프트웨어를 만들자!](./etc/code.md)
