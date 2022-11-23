@@ -41,6 +41,7 @@
 
 - [Docker & K8s](./system/docker-k8s.md)
 - [DB Synchronization](./system/db-synchronization.md)
+- [토스뱅크의 대출 시스템 아키텍처](./system/toss-bank-system-architecture.md)
 - Cache
 - Replication
 - MessageQueue
