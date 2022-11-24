@@ -48,6 +48,7 @@
 - [DB Synchronization](./system/db-synchronization.md)
 - [토스뱅크의 대출 시스템 아키텍처](./system/toss-bank-system-architecture.md)
 - [Circuit Breaker](./system/circuit-breaker.md)
+- [MSA](./system/msa.md)
 - Cache
 - Replication
 - MessageQueue
