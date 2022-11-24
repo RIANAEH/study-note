@@ -11,3 +11,5 @@
     - 범준님 처럼 함께 이야기해보고 싶은 개발자가 되고 싶다. 
 - [경희야, 어떻게 하면 너처럼 행복하게 오래 일할 수 있니? by 우아한형제들 딜리버리플랫폼팀 팀장 김경희](https://www.youtube.com/watch?v=KuaoLYUyBWE&t=5s)
     - 오랫동안 일하고 싶다!
+- [개발자의 애질리티 by 토스페이먼츠 강병훈](https://toss.tech/article/dev-agility)
+    - 애자일하게 일하는 법!

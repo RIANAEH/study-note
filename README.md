@@ -11,6 +11,7 @@
 
 - [일을 잘하는 방법](./programming/career.md)
 - [지속 성장 가능한 소프트웨어를 만들자!](./programming/code.md)
+- [Refactoring](./programming/refactoring.md)
 - [Singleton Pattern](https://github.com/woowacourse-study/2022-Monday-CS-Study/blob/main/Design/1.md)
 
 ## Java
