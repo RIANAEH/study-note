@@ -41,6 +41,7 @@
 ## Database
 
 - [How to prevent phantom reads in repeatable read (feat. InnoDB, Record/Gap/Net-Key Lock)](./db/innodb-phantom-read.md)
+- [Partitioning](./db/partitioning.md)
 
 ## System Architecture
 
