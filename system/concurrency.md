@@ -55,7 +55,37 @@ TransactionRequiredException: no transaction is in progress
 - https://woonys.tistory.com/entry/Transactional%EC%9D%80-%EB%A7%8C%EB%8A%A5%EC%9D%B4-%EC%95%84%EB%8B%99%EB%8B%88%EB%8B%A4-2-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-%EA%B2%A9%EB%A6%AC%EC%84%B1%EA%B3%BC-lock
 - https://junhyunny.github.io/spring-boot/jpa/junit/jpa-pessimitic-lock/
 
-## 분산 락
+## 분산락
 
+락을 위한 테이블을 따로 두고 특정 데이터에 대한 접근 전 락 테이블을 확인해 간접적으로 락을 구현하는 방식입니다. 분산 환경에서 락을 관리하는 공유 데이터베이스를 따로 두어 여러 서버 및 데이터베이스 사이의 동시성을 제어할 수 있습니다. 
+
+락 데이터를 관리하는 데이터베이스에는 여러 서버에서 동시다발적으로 요청을 보내기 때문에 높은 처리량이 보장되어야 합니다. 이러한 면에서 Redis는 in-memory 기반 저장소기 때문에 RDBMS 보다 높은 처리량을 제공한다는 장점을 가집니다. 하지만 이미 RDBMS를 사용하고 있는 상황이라면 Redis를 위한 추가적인 인프라를 구축하고 관리해야한다는 단점을 가집니다. 
+
+### 왜 많은 개발자들이 Redisson을 이용해 분산락을 구현할까요?
+
+#### 레디스에서는 싱글 스레드를 이용합니다.
+
+레디스는 싱글 스레드 기반으로 연산하기 때문에 락에 대한 여러 연산을 원자적이게 제공하기 수월합니다. 
+
+#### lock에 타임아웃이 구현되어 있습니다. 
+
+Redisson의 `tryLock(waitTime, leaseTime, unit)`에는 락 획득을 대기할 타임아웃인 `waitTime`과 락이 만료되는 시간인 `leaseTime`을 지정해야 합니다. 
+
+`waitTime` 만큼의 시간이 지나면 `false`가 반환되며 락 획득에 실패했음을 알려줍니다. 그리고 `leaseTime` 만큼의 시간이 지나면 락이 만료되어 사라지기 때문에 어플리케이션에서 락을 해제해주지 않더라도(락 획득 후 해당 서버에 장애가 발생해 락을 해제하지 못하는 상황이 발생할 수 있음) 다른 스레드 혹은 어플리케이션에서 락을 획득할 수 있습니다. 
+
+#### 스핀 락을 사용하지 않습니다.
+
+Redisson은 스핀 락을 사용하지 않기 때문에 레디스에 부담을 주지 않습니다. 대신 pub/sub 방식을 사용합니다. 락이 해제될 때마다 subscribe 하는 클라이언트들에게 "락 획득을 시도해도 됩니다~"라는 메시지를 보냅니다. 따라서 각 클라이언트가 레디스에 락 획득 가능 여부 
+
+### 분산락에는 갱신 유실 문제가 있어요.
+
+분산락 구현 과정에서 `타임아웃`을 설정하게 되면 갱신 유실 문제가 발생할 수 있습니다. 분산락과 낙관적 락을 함께 이용해 이러한 문제를 해결할 수 있습니다.
+
+> 이에 대한 자세한 설명은 [다음 영상](https://www.youtube.com/watch?v=UOWy6zdsD-c)에 나와있다. 
+
+### 참고 자료
+
+- https://way-be-developer.tistory.com/m/274
 - https://techblog.woowahan.com/2631/
-
+- https://hyperconnect.github.io/2019/11/15/redis-distributed-lock-1.html
+- https://hyos-dev-log.tistory.com/34
