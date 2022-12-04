@@ -42,7 +42,7 @@
 
 - [How to prevent phantom reads in repeatable read (feat. InnoDB, Record/Gap/Net-Key Lock)](./db/innodb-phantom-read.md)
 
-## System
+## System Architecture
 
 - [Docker & K8s](./system/docker-k8s.md)
 - [DB Synchronization](./system/db-synchronization.md)
@@ -51,7 +51,7 @@
 - [MSA](./system/msa.md)
 - [BFF(Backend for Fronend)](./system/bff.md)
 - Cache
-- Replication
+- [Replication](./system/replication.md)
 - MessageQueue
 
 ## Network
