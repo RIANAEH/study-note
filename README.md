@@ -42,6 +42,7 @@
 
 - [How to prevent phantom reads in repeatable read (feat. InnoDB, Record/Gap/Net-Key Lock)](./db/innodb-phantom-read.md)
 - [Partitioning](./db/partitioning.md)
+- [MySQL에서는 JOIN을 어떻게 처리할까?](./db/mysql-join.md)
 
 ## System Architecture
 
