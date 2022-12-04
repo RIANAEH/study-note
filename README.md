@@ -54,6 +54,7 @@
 - Cache
 - [Replication](./system/replication.md)
 - MessageQueue
+- [모락: 인프라 구조](./system/morak-infra-architecture.md)
 
 ## Network
 
