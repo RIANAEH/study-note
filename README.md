@@ -34,15 +34,17 @@
 - [@RequestScope](./spring/request-scope.md)
 - [Ameria](./spring/armeria.md)
 
-## JPA
-
-- JPA
-
 ## Database
 
-- [How to prevent phantom reads in repeatable read (feat. InnoDB, Record/Gap/Net-Key Lock)](./db/innodb-phantom-read.md)
 - [Partitioning](./db/partitioning.md)
+
+`MySQL`  
+- [How to prevent phantom reads in repeatable read (feat. InnoDB, Record/Gap/Net-Key Lock)](./db/innodb-phantom-read.md)
 - [MySQL에서는 JOIN을 어떻게 처리할까?](./db/mysql-join.md)
+
+`JPA`  
+- JPA 주의점 정리
+
 
 ## System Architecture
 
